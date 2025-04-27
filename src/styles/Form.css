@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+form input{
+    width: 220px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #7cc4f8;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:#b2dfdb;
+    background-color: transparent;
+}
+
+.name,.tele{
+    display:flex;
+    padding:25px;
+}
+
+.pr{
+    display:flex;
+    padding:10px;
+    align-items: center;
+}
+hr{
+    flex: 1; /* Grow and take available space */
+    height: 1px; /* Thin horizontal line */
+    border: none; 
+    background-color: #b2dfdb;
+    margin: 0 10px;
+}
+
+.education div, .practical div{
+    margin-top: 25px;
+}
+.education div input, .practical div input{
+    width:350px;
+}
+.submit{
+    text-align: center;
+    padding:20px;
+    margin-top: 10px;
+}
+
+button{
+    width:fit-content;
+    font-size: 17px;
+    border: 1px solid #b2dfdb;
+    background-color: transparent;
+    color: #b2dfdb;
+    border-radius: 7px;
+    padding:10px;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.7s ease-in-out;
+}
