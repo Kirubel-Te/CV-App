@@ -36,13 +36,52 @@ export default function Form(){
             [name]: value
         }));
     }
+
+    function handleReset(e) {
+        e.preventDefault(); // prevent default reset behavior
+        setform({
+        fname: '',
+        lname: '',
+        email: '',
+        phonenumber: '',
+        sName: '',
+        study: '',
+        date: '',
+        cname: '',
+        position: '',
+        role: ''
+        });
+    }
     
 
     return(
         <>
             {cv ? 
-            <button onClick={clickhandle}>click</button> : 
-            <form action={submittion}>
+            <section>
+                <h1>{form.fname +" "+form.lname}</h1>
+                <div className='maincv'>
+                    <h2>Personal Information</h2>
+                    <hr/>
+                    <h4>Name: {form.fname +" "+form.lname}</h4>
+                    <h4>E-mail: {form.email}</h4>
+                    <h4>Phone Number: {form.phonenumber}</h4>
+                    <h2>Education</h2>
+                    <hr/>
+                    <h4>School Name: {form.sName}</h4>
+                    <h4>Field of Study: {form.study}</h4>
+                    <h4>Expected Graduation: {form.date}</h4>
+                    <h2>Experience</h2>
+                    <hr/>
+                    <h4>Company Name: {form.cname}</h4>
+                    <h4>Position: {form.position}</h4>
+                    <h4>Role: {form.role}</h4>
+                </div>
+                <div>
+                    <button onClick={clickhandle}>Edit</button>
+                </div>
+            </section> : 
+            <form action={submittion} id="myForm">
+                <h1>Generate your CV</h1>
                 <section className='personal'>
                     <div className="pr">
                         <h3>Personal Information</h3>
@@ -89,6 +128,9 @@ export default function Form(){
                 </section>
                 <section className="submit">
                     <button>Generate CV</button>
+                    <button onClick={handleReset}>Clear Form</button>
+                    
+
                 </section>
             </form>}
         </>

@@ -6,7 +6,7 @@ export default function App(){
   return(
     <>
       <main className='main'>
-        <h1>CV Project</h1>
+        
         <Form/>
       </main>
       
