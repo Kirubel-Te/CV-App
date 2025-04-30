@@ -57,7 +57,7 @@ export default function Form(){
     return(
         <>
             {cv ? 
-            <section>
+            <section className='section'>
                 <h1>{form.fname +" "+form.lname}</h1>
                 <div className='maincv'>
                     <h2>Personal Information</h2>

@@ -70,3 +70,13 @@ form > h1{
     text-align: center;
     margin-bottom: 10px;
 }
+.maincv > hr,.maincv > h4{
+    margin-bottom: 12px;
+}
+.section > h1{
+    text-align: center;
+    margin-bottom: 17px;
+}
+.maincv>hr{
+    height: 2px;
+}
