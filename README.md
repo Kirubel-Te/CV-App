@@ -4,3 +4,5 @@ This version will generate you a fully developed Resume after collecting importa
 -Personal Information
 -Acadamic Experience
 -Practical Experiance
+
+developed using React.js
